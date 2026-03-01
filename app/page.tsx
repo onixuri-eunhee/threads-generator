@@ -6,7 +6,7 @@ export default function Home() {
       <header className="header">
         <h1>스레드 글 생성기</h1>
         <p className="subtitle">
-          주제를 입력하면 Threads에 올릴 글을 만들어줄게. 랜덤도 돼!
+          주제를 입력하면 Threads에 올릴 글을 만들어줄게
         </p>
       </header>
       <GeneratorForm />
