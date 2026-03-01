@@ -23,9 +23,19 @@ export default function ResultCard({ content, topic }: ResultCardProps) {
         <span className="result-length">{content.length}자</span>
       </div>
       <p className="result-content">{content}</p>
-      <button className="copy-button" onClick={handleCopy}>
-        {copied ? "복사됨" : "복사"}
-      </button>
+      <div className="result-actions">
+        <button className="copy-button" onClick={handleCopy}>
+          {copied ? "복사됨" : "복사"}
+        </button>
+        <a
+          className="threads-button"
+          href={`https://www.threads.net/intent/post?text=${encodeURIComponent(content)}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          스레드에 올리기
+        </a>
+      </div>
     </div>
   );
 }

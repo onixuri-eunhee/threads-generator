@@ -284,7 +284,13 @@ body {
   margin-bottom: 16px;
 }
 
-.copy-button {
+.result-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.copy-button,
+.threads-button {
   display: inline-flex;
   align-items: center;
   padding: 8px 16px;
@@ -297,12 +303,26 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: all var(--transition-fast);
+  text-decoration: none;
 }
 
-.copy-button:hover {
+.copy-button:hover,
+.threads-button:hover {
   background-color: var(--color-surface);
   border-color: var(--color-border-focus);
   color: var(--color-text-primary);
+}
+
+.threads-button {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-color: var(--color-primary);
+}
+
+.threads-button:hover {
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
+  color: #ffffff;
 }
 
 /* ===== Responsive ===== */
